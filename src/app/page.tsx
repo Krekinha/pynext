@@ -1,7 +1,8 @@
+
 async function getData() {
   const api = "http://127.0.0.1:3000/api/hello";
 
-  const res = await fetch(api, {method:'GET'})
+  const res = await fetch(api, {method:'GET', cache: "no-store"})
   const data = await res.json();
   return data;
 }

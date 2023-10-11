@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/api/hello', methods=['GET'])
 def hello_world():
-    res = {'message': 'Olá, FLASK 2!'}
+    res = {'message': 'FLASK 27!'}
     return make_response(jsonify(res))
 
 
